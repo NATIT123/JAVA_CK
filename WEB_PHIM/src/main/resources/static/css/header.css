@@ -1,0 +1,185 @@
+/*NAVBAR*/
+.navbar{
+    width:100%;
+    height: 70px;
+    top:0;
+    z-index: 100;
+}
+
+.nav-link .dropdown-toggle .text-light{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.dropdown-item a:link {
+    text-decoration: none !important;
+    color: unset !important;
+}
+
+.nav-item:hover .nav-link{
+    border-radius: 5px;
+    color: red !important;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.user{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info img{
+    width: 50px;
+    height: 50px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+}
+
+.dropdown:hover > .dropdown-menu,
+.dropend:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+    margin-left: 0.125em;
+}
+
+.dropend:hover > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+
+#profile .dropdown:hover .dropdown-menu {
+    width: 250px;
+    right: 0;
+}
+
+
+#profile {
+    position: absolute;
+    right: 0;
+    width: 250px;
+    z-index: 1;
+}
+
+#profile a{
+    color: black;
+    font-style:normal;
+}
+
+
+#profile li{
+    align-items: center;
+}
+
+.dropdown-item:hover span{
+    font-weight: bold;
+}
+
+.dropend span{
+    font-weight:normal;
+}
+
+.dropend:hover di {
+    font-weight: bold;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.test{
+    width: 500px !important;
+}
+
+.picon{
+    margin-right: 5% !important;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.piconLI {
+    margin-right: 5% !important;
+}
+
+.nav-link{
+    font-weight: bold !important;
+    font-size: 17px !important;
+}
+
+.navbar .dropdown-item{
+    color: black !important;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.navbar .btnct{
+    padding:0.25rem 1rem;
+    font-size:1rem;
+    font-weight:700;
+    display:inline-flex;
+    position: relative;
+    align-items:center;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar .btnct span{
+    width: 115px;
+}
+
+.navbar .btn-hover::before{
+    z-index:1;
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:100%;
+    background-color: red;
+    transition:0.3s ease-in-out;
+}
+
+.navbar .btn-hover:hover::before{
+    width:100%;
+}
+.navbar .btnct i,
+.navbar .btnct span{
+    z-index:1;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .navbar .btnct{
+        margin: 10px 30px;
+    }
+
+    .test{
+        width: 250px !important;
+    }
+    .custom{
+        width: 250px;
+        background: black;
+    }
+
+    .nav-item{
+        text-align: center;
+    }
+}
+

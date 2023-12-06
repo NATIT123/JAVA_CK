@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:insert="~{fragments :: head}">
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<header th:replace="~{fragments :: header}"></header>
+<div th:if="${message!=null}" th:class="'alert alert-'+${type}" role="alert" th:text="${message}" style="text-align: center">
+</div>
+<div class="container d-flex align-items-center justify-content-center">
+    <form action="" class="formCtn" novalidate method="post">
+        <h1>Đăng nhập</h1>
+        <div class="form-group pad">
+            <label for="username">UsernName:</label>
+            <input type="text" class="form-control" id="username" placeholder="Nhập email" name="username">
+        </div>
+        <div class="form-group pad">
+            <label for="pwd">Mật khẩu:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="password">
+        </div>
+        <div id="error" class="pad" style="color: red;"></div>
+        <input type="checkbox" id="Remember" value="Remember me" class="pad">
+        <label for="Remember" class="pad">Remember me</label>
+        <a href="#" class="fgpassLink pad">Quên mật khẩu?</a>
+        <div class="noAcc pad">Không có tài khoản?<a href="/register" class="regisLink">Nhấn để đăng ký</a></div>
+        <input type="submit" id="submit" class="btn btn-default" name="btn-signin" value="Đăng nhập" >
+    </form>
+</div>
+<div th:replace="~{fragments :: script}"></div>
+<footer th:replace="~{fragments :: footer}"></footer>
+</body>
+<script>
+    setTimeout(() => {
+        $('#flash-alert ').fadeOut(2000)
+        $(".alert-success").fadeOut(2000)
+        $(".alert-danger").fadeOut(2000)
+    }, 1000);
+</script>
+
+</html>

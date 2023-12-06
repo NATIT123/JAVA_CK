@@ -1,0 +1,252 @@
+@media screen and (min-width: 550px) {
+
+    /* card-bgr */
+
+    .card-bgr .section__card-text {
+        padding: 7.5rem 0;
+    }
+
+    .card-bgr .section__card-text-title {
+        font-size: 5rem;
+    }
+
+    .card-bgr .section__card-text-subtitle {
+        font-size: 2.6rem;
+    }
+
+    .section__card-text .section__card-text-title {
+        font-size: 4rem;
+    }
+
+    .btn__down-app a,
+    .section__card-text-subtitle {
+        font-size: 2rem;
+    }
+
+
+    .form__wrapper {
+        width: fit-content;
+        padding: 5rem;
+    }
+
+    /* Home Responsive */
+    .section__movie-list {
+        padding: 3rem 2rem;
+    }
+
+    .cast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    #back__to-top {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.8rem;
+    }
+
+    .header__top-wrap {
+        margin: 0 1rem;
+    }
+
+    .section__card-text .section__card-text-title {
+        margin: 0
+    }
+
+    .card-bgr .section__card-text-title {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .section__card {
+        padding: 7rem 4.5rem;
+    }
+
+    .section__card-text {
+        text-align: left;
+        padding: 0 2rem 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .flex-md-row-reverse .section__card-text {
+        padding: 0 0 0 2rem;
+    }
+
+    .section__card-img {
+        padding: 0 0 0 2rem;
+    }
+
+    .flex-md-row-reverse .section__card-img {
+        padding: 0 2rem 0 0;
+    }
+
+    .btn.btn__down-app {
+        margin: 1rem 0;
+        align-self: flex-start;
+        padding-inline: 2rem;
+    }
+
+    .section__card-text .section__card-text-title {
+        font-size: 5rem;
+    }
+
+    .btn__down-app a,
+    .section__card-text-subtitle {
+        font-size: 2.6rem;
+    }
+
+    .section__faq-list li {
+        width: 75%;
+    }
+
+
+    /* Home Responsive */
+
+    .card__movie-big .bookmark-rate {
+        padding: 1rem;
+    }
+
+    .card__movie-big .rate {
+        font-size: 1.8rem;
+    }
+
+    .card__movie-big .bookmark {
+        font-size: 2.2rem;
+    }
+
+    .card__movie-big .rate-icon {
+        font-size: 2.2rem;
+    }
+
+
+    .owl-prev {
+        right: calc(100% - 2rem);
+    }
+
+    .owl-next {
+        left: calc(100% - 2rem);
+    }
+
+    .movie-title {
+        font-size: 1.6rem;
+    }
+
+    .movie-category>h1 {
+        font-size: 2.6rem;
+    }
+
+    /* Search HTML */
+    .list__film {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .person__details .list__film {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Person Responsive */
+    .person__info {
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+
+    /* Movie Responsive */
+    .film__info-img .icon-play {
+        opacity: .8;
+        top: 50%;
+        left: 50%;
+    }
+
+    .wrap-iframes .item {
+        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cast {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+    .header__top-logo img {
+        height: 5rem;
+    }
+
+    .header__top-wrap {
+        margin: 0 3vw;
+    }
+
+    .header__nav-wrap {
+        top: 3.5rem;
+    }
+
+    .section__card-bgr {
+        top: -8rem
+    }
+
+    .section__card-text .section__card-text-title {
+        font-size: 5rem;
+    }
+
+    .section__card-text-subtitle {
+        font-size: 2.6rem;
+    }
+
+    .email__form-input {
+        display: flex;
+        justify-content: center;
+    }
+
+    .label__input .input-tag {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .email__form .email__form-title {
+        max-width: none;
+    }
+
+    .email__form-input .btn {
+        margin-top: 0;
+        height: 4.8rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .login__input-group .label__input .input-tag {
+        border-radius: 0.5rem;
+    }
+
+    /* Search Responsive */
+    .list__film {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    /* Person Responsive + Movie Responsive*/
+    .wrap-iframes .item,
+    .person__details .list__film {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Movie Responsive */
+    .actor {
+        max-width: 18rem;
+    }
+
+    .actor__img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .cast {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+}

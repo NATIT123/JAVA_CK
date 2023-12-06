@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/faviconLogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheMovies</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/index.css">
+
+    <link rel="stylesheet" href="/css/responsiveIndex.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__top">
+            <div class="header__top-wrap">
+                <div class="header__top-logo">
+                    <a href="/static"><img src="/img/paner.png" alt="logo"></a>
+                </div>
+                <div class="header__login">
+                    <a  href="/login" type="button" class="btn btn-red" style="margin-right:20px">Đăng nhập</a>
+                    <a href="/register" type="button" class="btn btn-red">Đăng ký </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<div class="main">
+    <!-- Card form Email - Bgr -->
+    <div class="section__card card-bgr">
+        <div class="section__card-wrap">
+            <div class="section__card-bgr">
+                <div class="bgr">
+                    <img src="/img/backgroundHeader.jpg" alt="bgr-header">
+                </div>
+                <div class="bgr-gradient">
+
+                </div>
+            </div>
+            <div class="container g-0">
+                <div class="section__card-text">
+                    <h1 class="section__card-text-title">
+                        Chương trình truyền hình, phim không giới hạn và nhiều nội dung khác.
+                    </h1>
+                    <h2 class="section__card-text-subtitle">
+                        Xem ở mọi nơi. Hủy bất kỳ lúc nào.
+                    </h2>
+
+                    <form class="email__form">
+                        <h3 class="email__form-title">
+                            Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.
+                        </h3>
+
+                        <div class="email__form-input">
+                            <div class="wrap__form">
+                                <label class="label__input">
+                                    <input type="email" name="email" tabindex="0" class="input-tag" maxlength="50">
+                                    <span class="place">
+                      Địa chỉ email
+                    </span>
+                                </label>
+                                <div class="input-error">
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-red">
+                                Bắt đầu
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Tv -->
+    <div class="section__card card__on-tv">
+        <div class="section__card-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="section__card-text">
+                            <h1 class="section__card-text-title">
+                                Thưởng thức trên TV của bạn.
+                            </h1>
+                            <h2 class="section__card-text-subtitle">
+                                Xem trên TV thông minh, Playstation, Xbox, Chromecast, Apple TV, đầu phát Blu-ray và nhiều thiết bị
+                                khác.
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="section__card-img">
+                            <div class="section__card-img-animation">
+                                <img src="/img/bgr-tv.png" alt="tv">
+                                <div class="card__animation">
+                                    <video src="/img/video-tv-0819.m4v" autoplay muted loop></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Download - Watch -->
+    <div class="section__card card-download">
+        <div class="section__card-wrap">
+            <div class="container">
+                <div class="row flex-md-row-reverse">
+                    <div class="col-12 col-md-6">
+                        <div class="section__card-text">
+                            <h1 class="section__card-text-title">
+                                Tải xuống nội dung để xem ngoại tuyến.
+                            </h1>
+                            <h2 class="section__card-text-subtitle">
+                                Lưu lại những nội dung yêu thích một cách dễ dàng và luôn có thứ để xem.
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="section__card-img">
+                            <div class="section__card-img-animation">
+                                <img src="/img/onMobile.jpg" alt="on-mobile">
+                                <div class="card__animation">
+                                    <div class="card__animation-img">
+                                        <img src="/img/img-mobile2.png" alt="mobile">
+                                    </div>
+                                    <div class="card__animation-text">
+                                        <h3>Cậu bé mất tích</h3>
+                                        <h5>Đang tải xuống...</h5>
+                                    </div>
+                                    <div class="card__animation-custom">
+                                        <img src="/img/download-icon.gif" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Device -->
+    <div class="section__card card__device">
+        <div class="section__card-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="section__card-text">
+                            <h1 class="section__card-text-title">
+                                Xem ở mọi nơi.
+                            </h1>
+                            <h2 class="section__card-text-subtitle">
+                                Phát trực tuyến không giới hạn phim và chương trình truyền hình trên điện thoại, máy tính bảng, máy
+                                tính xách tay và TV.
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="section__card-img">
+                            <div class="section__card-img-animation">
+                                <img src="/img/device.png" alt="tv">
+                                <div class="card__animation">
+                                    <video src="/img/video-devices-vn.m4v" autoplay muted loop></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Kid -->
+    <div class="section__card">
+        <div class="section__card-wrap">
+            <div class="container">
+                <div class="row flex-md-row-reverse">
+                    <div class="col-12 col-md-6">
+                        <div class="section__card-text">
+                            <h1 class="section__card-text-title">
+                                Tải xuống nội dung để xem ngoại tuyến.
+                            </h1>
+                            <h2 class="section__card-text-subtitle">
+                                Lưu lại những nội dung yêu thích một cách dễ dàng và luôn có thứ để xem.
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="section__card-img">
+                            <div class="section__card-img-animation">
+                                <img src="/img/img-kid.png" alt="kid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Download App -->
+    <div class="section__card">
+        <div class="section__card-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="section__card-text">
+                            <h1 class="section__card-text-title">
+                                Bạn có smart phone? Hãy thử gói dịch vụ miễn phí mới của chúng tôi!
+                            </h1>
+                            <h2 class="section__card-text-subtitle">
+                                Xem các bộ phim và chương trình truyền hình mới được tuyển chọn mà không cần cung cấp thông tin thanh
+                                toán!
+                            </h2>
+
+                            <div class="btn btn-red btn__down-app">
+                                <a class="not__link">
+                                    Tải ứng dụng
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="section__card-img">
+                            <div class="section__card-img-animation">
+                                <img src="/img/downloadApp.jpg" alt="App">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Frequently asked questions -->
+    <div class="section__card faq">
+        <div class="section__card-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section__card-text">
+                            <h1 class="section__card-text-title">
+                                Câu hỏi thường gặp
+                            </h1>
+
+                            <ul class="section__faq-list">
+                                <li>
+                                    <button class="faq-question">
+                                        TheMovies là gì?
+                                        <i class="icon-plus fa-solid fa-plus"></i>
+                                    </button>
+                                    <div class="answers">
+                      <span>
+                        TheMovies là dịch vụ phát trực tuyến mang đến đa dạng
+                        các loại chương trình truyền hình, phim, anime, phim
+                        tài liệu đoạt giải thưởng và nhiều nội dung khác trên
+                        hàng nghìn thiết bị có kết nối Internet.
+                        <br />
+                        <br />
+                        Bạn có thể xem bao nhiêu tùy thích, bất cứ lúc nào bạn muốn mà không
+                        gặp phải một quảng cáo nào – tất cả chỉ với một mức giá thấp hàng
+                        tháng. Luôn có những nội dung mới để bạn khám phá và những chương
+                        trình truyền hình, phim mới được bổ sung mỗi tuần!
+                      </span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <button class="faq-question">
+                                        Tôi phải trả bao nhiêu tiền để xem TheMovies?
+                                        <i class="icon-plus fa-solid fa-plus"></i>
+                                    </button>
+                                    <div class="answers">
+                      <span>
+                        Xem TheMovies trên điện thoại thông minh, máy tính
+                        bảng, TV thông minh, máy tính xách tay hoặc thiết
+                        bị phát trực tuyến, chỉ với một khoản phí cố định hàng tháng.
+                        Các gói dịch vụ với mức giá từ 70.000 ₫ đến 260.000 ₫ mỗi
+                        tháng. Không phụ phí, không hợp đồng.
+                      </span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <button class="faq-question">
+                                        Tôi có thể xem ở đâu?
+                                        <i class="icon-plus fa-solid fa-plus"></i>
+                                    </button>
+                                    <div class="answers">
+                      <span>
+                        Xem mọi lúc, mọi nơi. Đăng nhập bằng tài khoản TheMovies của bạn để xem ngay trên trang web
+                        TheMovies.com từ máy tính cá
+                        nhân, hoặc trên bất kỳ thiết bị nào có kết nối Internet và có cài đặt ứng dụng TheMovies, bao
+                        gồm
+                        TV
+                        thông minh, điện
+                        thoại thông minh, máy tính bảng, thiết bị phát đa phương tiện trực tuyến và máy chơi game.
+                        <br />
+                        <br />
+                        Bạn cũng có thể tải xuống các chương trình yêu thích bằng ứng dụng trên iOS, Android hoặc
+                        Windows
+                        10. Vào phần nội dung
+                        đã tải xuống để xem trong khi di chuyển và khi không có kết nối Internet. Mang TheMovies theo
+                        bạn
+                        đến
+                        mọi nơi.
+                      </span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <button class="faq-question">
+                                        Làm thế nào để hủy?
+                                        <i class="icon-plus fa-solid fa-plus"></i>
+                                    </button>
+                                    <div class="answers">
+                      <span>
+                        TheMovies rất linh hoạt. Không có hợp đồng phiền toái, không ràng buộc. Bạn có thể dễ dàng hủy
+                        tài
+                        khoản trực tuyến chỉ
+                        trong hai cú nhấp chuột. Không mất phí hủy – bạn có thể bắt đầu hoặc ngừng tài khoản bất cứ lúc
+                        nào.
+                      </span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <button class="faq-question">
+                                        Tôi có thể xem gì trên TheMovies?
+                                        <i class="icon-plus fa-solid fa-plus"></i>
+                                    </button>
+                                    <div class="answers">
+                      <span>
+                        TheMovies có một thư viện phong phú gồm các phim truyện, phim tài liệu,
+                        chương trình truyền hình, anime, tác phẩm giành
+                        giải thưởng của TheMovies và nhiều nội dung khác. Xem không
+                        giới hạn bất cứ lúc nào bạn muốn.
+                      </span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <button class="faq-question">
+                                        TheMovies có phù hợp cho trẻ em không?
+                                        <i class="icon-plus fa-solid fa-plus"></i>
+                                    </button>
+                                    <div class="answers">
+                      <span>
+                        Trải nghiệm TheMovies Trẻ em có sẵn trong gói dịch vụ của bạn, trao cho phụ huynh quyền kiểm
+                        soát
+                        trong khi các em có thể
+                        thưởng thức các bộ phim và chương trình phù hợp cho gia đình tại không gian riêng.
+                        <br />
+                        <br />
+                        Hồ sơ Trẻ em đi kèm tính năng kiểm soát của cha mẹ (được bảo vệ bằng mã PIN), cho phép bạn giới
+                        hạn
+                        độ tuổi cho nội dung
+                        con mình được phép xem, cũng như chặn những phim hoặc chương trình mà bạn không muốn các em nhìn
+                        thấy.
+                      </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <form class="email__form">
+                                <h3 class="email__form-title">
+                                    Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.
+                                </h3>
+
+                                <div class="email__form-input">
+                                    <div class="wrap__form">
+                                        <label class="label__input">
+                                            <input type="email" name="email" tabindex="0" class="input-tag" maxlength="50">
+                                            <span class="place">
+                          Địa chỉ email
+                        </span>
+                                        </label>
+                                        <div class="input-error">
+
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-red">
+                                        Bắt đầu
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<button type="button" class="btn btn-danger btn-lg" id="back__to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<footer>
+    <div class="section__card footer">
+        <div class="section__card-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-title">
+                            <a class="not__link">Bạn có câu hỏi? Liên hệ với chúng tôi.</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="row">
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Câu hỏi thường gặp</a>
+                    </li>
+
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Trung tâm trợ giúp</a>
+                    </li>
+
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Tài khoản</a>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Trung tâm đa phương tiện</a>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Quan hệ với nhà đầu tư</a>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Việc làm</a>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Các cách xem</a>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Điều khoản sử dụng</a>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Quyền riêng tư</a>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Tùy chọn cookie</a>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Thông tin doanh nghiệp</a>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Liên hệ với chúng tôi</a>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Kiểm tra tốc độ</a>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Thông báo pháp lý</a>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <a class="not__link">Chỉ có trên TheMovies</a>
+                    </li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="design-by">
+                            Design by HuanPT
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

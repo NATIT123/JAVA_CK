@@ -1,0 +1,89 @@
+.footer{
+    width:100%;
+    background-color:black;
+    position: relative;
+    bottom:0;
+}
+.footer .row{
+    padding-top: 20px;
+}
+.footer a, .footer b, .footer p{
+    color: white;
+    text-decoration: none;
+}
+.footer .logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+.footer .socail-list{
+    margin-top:50px;
+    width:5px;
+    margin-left:5px;
+    height:30px;
+    width:30px;
+}
+.socail-list i{
+    padding:5px 2px ;
+}
+.socail-list .bxl-twitter,.bxl-facebook{
+    color:rgb(0, 157, 255);
+    animation-delay:1s;
+}
+.socail-list .bxl-instagram{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    animation-delay:2s;
+}
+.socail-list .bxl-telegram{
+    color:#229ED9;
+    animation-delay:3s;
+}
+.socail-list .bxl-youtube{
+    color:#FF0000;
+    animation-delay:4s;
+}
+.socail-list .bxl-skype{
+    color:#00aff0;
+    animation-delay:5s;
+}
+.socail-list .bx{
+    display:inline-block;
+    animation:float 5s ease-in-out infinite;
+}
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15%);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+.footer-menu{
+    list-style-type:none;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.footer-menu img{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.footer-menu a{
+    margin-top: 5px;
+    display:inline-block;
+    transition:0.3s ease-in-out;
+    font-size: 15px;
+    font-weight:500;
+}
+.footer-menu a:hover{
+    transform:translateX(5px);
+    color:red !important;
+}
+.copy-right{
+    text-align:center;
+    color:darkturquoise
+}

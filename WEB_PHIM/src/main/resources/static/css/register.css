@@ -1,0 +1,50 @@
+body{
+    background-image: url("../img/Background.png");
+}
+
+.formCtn{
+    background-color: rgb(47, 45, 45);
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px;
+    margin-top: 7%;
+}
+
+.container h1{
+    text-align: center;
+    color: white;
+}
+
+.container a{
+    text-decoration: none;
+    color: rgb(40, 40, 230);
+}
+
+label{
+    color: white;
+}
+
+#submit{
+    background-color: red;
+    width: 100%;
+}
+
+.container .rgLink{
+    color: white;
+}
+
+button:hover, a:hover, .form-group:hover{
+    opacity: 0.8;
+}
+
+.haveAcc{
+    color: white;
+}
+
+.loginLink{
+    margin-left: 100px;
+}
+
+.pad{
+    padding-top: 7px;
+}

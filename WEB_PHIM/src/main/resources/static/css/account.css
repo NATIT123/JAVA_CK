@@ -1,0 +1,38 @@
+.btn__changePassword {
+    cursor: pointer;
+    display: inline-block !important;
+}
+
+.changePassword__form {
+    max-width: 45rem;
+    margin-inline: auto;
+    text-align: left;
+}
+
+.user__profile-list li {
+    text-align: center;
+}
+
+.changePassword__form .input-tag {
+    color: var(--white-color);
+    background-color: #111;
+}
+
+.login__btn button {
+    padding: 1rem;
+}
+
+.tab-content .img-fluid.rounded-start {
+    max-height: 100%;
+}
+
+.tab-content .release-date {
+    font-size: 1.6rem;
+    color: var(--gray-color);
+    margin-bottom: 0.5rem;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}

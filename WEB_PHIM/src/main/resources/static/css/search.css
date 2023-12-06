@@ -1,0 +1,68 @@
+/* @import url("responsiveIndex.css"); */
+
+.filter__list {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.filter__list .row {
+    align-items: center;
+}
+
+.filter__item select {
+    padding: .7rem;
+    width: 100%;
+    text-align: center;
+    border: 0;
+    outline: none;
+    color: var(--white-color);
+    background: #000;
+    border-radius: .5rem;
+}
+
+.filter__item select>* {
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+.filter__item select option:hover {
+    background-color: var(--gray-color);
+    color: var(--orange-color);
+}
+
+#remove__filter {
+    font-size: 1.6rem;
+}
+
+.list__film {
+    list-style: none;
+    display: grid;
+    padding-inline: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.pagination__list {
+    margin-block: 3rem;
+}
+
+.pagination {
+    --bs-pagination-color: var(--orange-color);
+    --bs-pagination-active-color: var(--black-color);
+    --bs-pagination-active-bg: var(--orange-color);
+    --bs-pagination-hover-bg: var(--orange-color);
+    --bs-pagination-focus-color: var(--black-color);
+    --bs-pagination-active-border-color: var(--orange-color);
+    border: none;
+    gap: .5rem;
+}
+
+.page-link {
+    color: var(--black-color);
+    border: none;
+}
+
+.search__title {
+    color: var(--orange-color);
+    margin-inline: 2rem;
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Thông tin người dùng </title>
+    <style>
+        .row div {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-6 col-md-5 col-lg-4">
+            <div class="card w-100" th:object="${movie}">
+                <img class="card-img-top" th:src="'/images/movie/'+*{imgSrc}"
+                     alt="Card image">
+                <div class="card-body" >
+                    <h4 class="card-title text-primary" th:text="*{name}"></h4>
+                    <p class="card-text">Diễn Viên: <strong >
+                        <span th:each="_actor:*{actorlist}" th:object="${_actor}">
+                        <span th:text="*{getActor().getName() }"></span>
+                        <br /> </span>
+                    </strong></p>
+                    <p class="card-text">Quốc gia: <strong th:text="*{nation}"></strong></p>
+                    <p class="card-text">Thể loại: <strong>
+                          <span th:each="_genre:*{genrelist}" th:object="${_genre}">
+                    <span th:text="*{getGenre().getName()}"></span></span>
+                    </strong></p>
+                    <p class="card-text">Năm phát hành: <strong th:text="*{releasedYear}"></strong></p>
+                    <p class="card-text">Thời lượng: <strong th:text="*{duration}"></strong></p>
+                    <p class="card-text">Lượt coi: <strong th:text="*{numViews}"></strong></p>
+                    <p class="card-text">Lượt thích: <strong th:text="*{numLikes}"></strong></p>
+                    <p class="card-text">Đánh giá: <strong th:text="*{rating}"></strong></p>
+                </div>
+            </div>
+            <p class="mt-3"><a href="/movies" >Quay lại</a></p>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

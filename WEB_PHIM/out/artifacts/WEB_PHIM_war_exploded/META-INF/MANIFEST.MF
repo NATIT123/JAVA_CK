@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: TU
+Build-Jdk: Oracle OpenJDK version 21
+Implementation-Title: WEB_PHIM
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.project
+Main-Class: ${start-class}
+

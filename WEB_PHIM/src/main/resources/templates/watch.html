@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head th:insert="~{fragments :: head}">
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<header th:replace="~{fragments :: header}"></header>
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div style="text-align: center">
+                    <h1 class="Title" th:text="${movie.name}">Xem phim: </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div style="text-align: center" id="play">
+                    <video style="text-align: center" width="960" height="720" controls><source th:src="${episode.videoSrc}" type="video/mp4"></video>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h5 class="epList">Danh sách tập phim:</h5>
+                <div class="pagination">
+<!--                    @foreach (var ep in Model.Episodes)-->
+<!--                    {-->
+<!--                        if (ep.Name != "Trailer")-->
+<!--                        {-->
+<!--                            if(ep.Name == Model.Episode.Name)-->
+<!--                            {-->
+<!--                                <a class="active" href="@Url.Action("Index","Watch",new{MovieID=@Model.Movie.ID, Episode=@ep.Name})">@ep.Name</a>-->
+<!--                            }-->
+<!--                            else-->
+<!--                            {-->
+<!--                                <a href="@Url.Action("Index","Watch",new{MovieID=@Model.Movie.ID, Episode=@ep.Name})">@ep.Name</a>-->
+<!--                            }-->
+<!--                        }-->
+<!--                    }-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<div th:replace="~{fragments :: script}"></div>
+<footer th:replace="~{fragments :: footer}"></footer>
+</html>

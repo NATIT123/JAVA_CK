@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:insert="~{fragments :: head}">
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<header th:replace="~{fragments :: header}"></header>
+<body>
+<div th:replace="~{fragments :: herosection}"></div>
+<div th:replace="~{fragments :: slider}"></div>
+
+
+<div th:replace="~{fragments :: action}"></div>
+<div th:replace="~{fragments :: _banner}"></div>
+<div th:replace="~{fragments :: cartoon}"></div>
+
+
+<!-- MOVIE SECTION -->
+<div class="movie-frame">
+    <div class="movWrapper">
+        <div class="tag" th:text="'Phim '+${tag}"></div>
+        <div class="container-fluid movie-container">
+            <div class="row">
+                <div class="col-6 col-lg-3 px-0 d-flex justify-content-center" th:each="_movie:${Moviekey}" th:object="${_movie}">
+                    <div class="mov">
+                        <div class="episode"></div>
+                        <img th:src="'/images/movie/'+*{imgSrc}" th:alt="*{name}">
+                        <div class="movie_info">
+                            <div class="title" th:text="*{name}"></div>
+                            <div class="icon_info">
+                                <div class="score">
+                                    <i class="bx bxs-star"></i>
+                                    <span th:text="*{rating}"></span>
+                                </div>
+                                <div class="time">
+                                    <i class="bx bxs-time"></i>
+                                    <span th:text="*{duration}"></span>
+                                </div>
+                                <div class="category"><span></span></div>
+                                <div class="age"><span>13+</span></div>
+                            </div>
+                            <div class="description" th:text="*{description}"></div>
+                            <div class="btn1">
+                                <a th:src="'/watch/'+*{id}" class="btnct btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Watch now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:replace="~{fragments :: script}"></div>
+<footer th:replace="~{fragments :: footer}"></footer>
+</body>
+</html>

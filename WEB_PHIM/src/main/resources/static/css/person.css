@@ -1,0 +1,28 @@
+
+
+.person__details {
+    margin-top: 8rem;
+}
+
+.person__info {
+    margin-bottom: 3rem;
+}
+
+.person__info .avatar {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.person__info .avatar {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.actor__story p {
+    color: var(--text-gray);
+}
+
+dd {
+    color: var(--text-gray);
+}
